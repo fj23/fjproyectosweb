@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacto | FJ Proyectos Web</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Contáctanos y y obten tu sitio web a tu medida">
+    <meta property="og:title" content="Contacto - FJ Proyectos Web">
+    <meta property="og:description" content="Contáctanos y y obten tu sitio web a tu medida">
+    <!--<meta property="og:image" content="http:///img/logo.png">-->
+    <meta name="author" content="FJ Proyectos Web">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://file.myfontastic.com/PPkhLEKdeS4GeVzFaJgsbX/icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="contenedor"><a class="logo" href="·"><img class="logo__img" src="img/" alt="FJ Proyectos Web"></a>
+        <h1 class="titulo-empresa">Proyectos Web</h1><span class="icon-bars" id="btn-menu"></span>
+        <nav class="menu">
+          <ul>
+            <li class="menu__item"><a class="menu__link" href="index.html">inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="web.html">diseño web</a></li>
+            <li class="menu__item"><a class="menu__link" href="hosting.html">hosting</a></li>
+            <li class="menu__item"><a class="menu__link" href="posrtafolio.html">portafolio</a></li>
+            <li class="menu__item"><a class="menu__link select" href="contacto.html">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="contenedor">
+        <section class="grupo no-banner">
+          <h2 class="grupo__titulo">CONTACTO</h2>
+          <div class="contenedor-formulario">
+            <form class="formulario" action="enviar.php" method="post" onsubmit="return validar();">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+              <label for="correo">Correo</label>
+              <input type="email" name="email" id="email" placeholder="Correo" required>
+              <label for="telefono">Teléfono</label>
+              <input type="text" name="telefono" id="telefono" placeholder="Teléfono o celular" required>
+              <label for="motivo">Motivo del mensaje</label>
+              <input type="text" name="motivo" id="motivo" placeholder="Motivo del mensaje" required>
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje" required></textarea>
+              <!--<label class="captcha">Marque la casilla por favor</label>-->
+              <!--<div class="g-recaptcha" data-sitekey="6Lc9YQUTAAAAAIVS2NflF_C_nzWU76vgEcLg80F0"></div>-->
+              <input class="boton__form" type="submit" value="Enviar">
+            </form>
+          </div>
+          <div class="mapa">
+            <p>¿Deseas una página web? Ponte en contacto con nosotros a través de este formulario.</p>
+            <!--<p>Si tienes dudas o consultas de algún tutorial en nuestro canal puedes unirte a nuestro grupo en Facebook: <a href="https://www.facebook.com/groups/212619492442077/">Diseño y desarrollo web con HTML, CSS, Javascript y PHP</a> allí entre todos los miembros podemos ayudarte.</p>--><img src="img/contact.jpg" alt="Contacto diseño web, FJ Proyectos web">
+          </div>
+        </section>
+      </div>
+    </main>
+     <footer class="main-footer">
+      <div class="contenedor">
+        <h2 class="main-footer__titulo">FJ Proyectos Web</h2>
+        <div class="datos">
+          <li class="datos__item">Email: fjcalderon2323@gmail.com</li>
+          <li class="datos__item">Cel: +56955191354</li>
+          <li class="datos__item">Ica - Chile</li>
+        </div>
+        <div class="sociales"></div>
+      </div>
+    </footer>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-61944772-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
+    <script src="js/validar-form.js"></script>
+  </body>
+</html>
